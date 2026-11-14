@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'; require-trusted-types-for 'script'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Unificador de PDF minimalista y seguro: 100% local, sin dependencias, sin rastreo.">
+<title>cleanPDF</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>clean<span>PDF</span></h1>
+    <p>// varios PDF → uno. Nada sale de tu navegador.</p>
+  </header>
+
+  <label id="drop" for="files">
+    <input id="files" type="file" accept="application/pdf,.pdf" multiple>
+    <b>Suelta tus PDF aquí</b>
+    <span>o haz clic para elegirlos</span>
+  </label>
+
+  <ol id="list" aria-label="Archivos a unir, en orden"></ol>
+  <p id="info" role="status"></p>
+  <button id="merge" type="button" disabled>Unir y descargar</button>
+
+  <footer>
+    <a class="badge" href="https://github.com/ramiraptor/pdf-merge" target="_blank" rel="noopener noreferrer"><b>repo</b><i>ramiraptor/pdf-merge</i></a>
+    <span class="badge"><b>dependencias</b><i>0</i></span>
+    <span class="badge"><b>red</b><i>0 peticiones</i></span>
+    <span class="badge"><b>CSP</b><i>estricta</i></span>
+    <span class="badge"><b>metadatos</b><i>eliminados</i></span>
+  </footer>
+</main>
+<script src="pdf.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
